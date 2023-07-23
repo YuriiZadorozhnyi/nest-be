@@ -16,6 +16,18 @@
     "noImplicitAny": false,
     "strictBindCallApply": false,
     "forceConsistentCasingInFileNames": false,
-    "noFallthroughCasesInSwitch": false
+    "noFallthroughCasesInSwitch": false,
+    "paths": {
+      "@auth": ["src/auth"],
+      "@auth/*": ["src/auth/*"],
+      "@config": ["src/config"],
+      "@config/*": ["src/config/*"],
+      "@types": ["src/types"],
+      "@types/*": ["src/types/*"],
+      "@users": ["src/users"],
+      "@users/*": ["src/users/*"],
+      "@utils": ["src/utils"],
+      "@utils/*": ["src/utils/*"],
+    }
   }
 }
