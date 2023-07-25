@@ -1,0 +1,6 @@
+# bypass copying these folders and files to docker context
+
+.git
+.gitignore
+node_modules
+Dockerfile

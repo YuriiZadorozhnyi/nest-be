@@ -12,7 +12,9 @@ const { dbConnection } = config;
 seeder({
   imports: [
     ConfigModule.forRoot(),
-    MongooseModule.forRoot(dbConnection),
+    MongooseModule.forRoot(
+      dbConnection.replace(/mongodb:\/\/mongodb:/, 'mongodb://localhost:'),
+    ),
     MongooseModule.forFeature([{ name: User.name, schema: UserSchema }]),
   ],
 }).run([UsersSeeder]);
