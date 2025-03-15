@@ -1,6 +1,8 @@
 import { Module } from '@nestjs/common';
 import { ConfigModule } from '@nestjs/config';
 import { MongooseModule } from '@nestjs/mongoose';
+import { EventsModule } from './events/events.module';
+import { NewsModule } from './news/news.module';
 
 import { ENV_CONFIG } from './config/env.config';
 import { config } from './config';
@@ -15,6 +17,8 @@ import { AuthModule } from '@auth/auth.module';
     MongooseModule.forRoot(dbConnection, {}),
     AuthModule,
     UsersModule,
+    EventsModule,
+    NewsModule,
   ],
 })
 export class AppModule {}
