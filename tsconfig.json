@@ -17,6 +17,7 @@
     "strictBindCallApply": false,
     "forceConsistentCasingInFileNames": false,
     "noFallthroughCasesInSwitch": false,
+    "resolveJsonModule": true,
     "paths": {
       "@auth": ["src/auth"],
       "@auth/*": ["src/auth/*"],
@@ -27,7 +28,7 @@
       "@users": ["src/users"],
       "@users/*": ["src/users/*"],
       "@utils": ["src/utils"],
-      "@utils/*": ["src/utils/*"],
+      "@utils/*": ["src/utils/*"]
     }
   }
 }
